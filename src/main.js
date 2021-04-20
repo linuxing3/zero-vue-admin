@@ -28,6 +28,9 @@ if (process.env.NODE_ENV === 'production') {
   mockXHR()
 }
 
+let commonUrl = "http://gozero.gce.xunqinji.xyz:8887";
+Vue.prototype.$api = commonUrl
+
 // set ElementUI lang to EN
 // Vue.use(ElementUI, { locale })
 // 如果想要中文版 element-ui，按如下方式声明
