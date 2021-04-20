@@ -6,7 +6,7 @@ import request from '@/utils/request'
  */
 export function queryLoginLogList(query) {
   return request({
-    url: window.global_config.BASE_URL + '/api/sys/loginLog/list',
+    url: '/api/sys/loginLog/list',
     method: 'post',
     data: query
   })
@@ -18,7 +18,7 @@ export function queryLoginLogList(query) {
  */
 export function deleteLoginlog(data) {
   return request({
-    url: window.global_config.BASE_URL + '/api/sys/loginLog/delete',
+    url: '/api/sys/loginLog/delete',
     method: 'post',
     data
   })
